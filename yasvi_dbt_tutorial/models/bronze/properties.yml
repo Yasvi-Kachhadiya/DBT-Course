@@ -1,0 +1,9 @@
+model: 
+  - name: bronze_date
+    config:
+      materialized: view
+      schema: bronze
+
+  - name: bronze_product
+    config:
+      materialized: view

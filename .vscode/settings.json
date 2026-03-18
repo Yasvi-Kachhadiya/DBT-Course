@@ -1,0 +1,4 @@
+{
+    "dbt.perspectiveTheme": "Monokai",
+    "dbt.queryLimit": 100
+}

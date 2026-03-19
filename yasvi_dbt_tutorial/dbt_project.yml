@@ -42,4 +42,6 @@ models:
       +materialized: table
       schema:  gold
 
-      
+seeds:
+  yasvi_dbt_tutorial:
+    +schema: bronze    

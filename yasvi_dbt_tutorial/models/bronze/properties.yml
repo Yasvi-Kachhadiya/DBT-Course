@@ -7,3 +7,26 @@ model:
   - name: bronze_product
     config:
       materialized: view
+
+  - name: bronze_sales
+    columns:
+        - name: sales_id
+          data_tests:
+                - not_null
+                - unique
+
+  - name: bronze_sales
+    columns:
+        - name: store_sk
+          data_tests:
+                - not_null
+                - unique
+
+
+  - name: bronze_store
+    columns:
+        - name: store_name
+          data_tests:
+                - accepted_values:
+                    arguments:
+                        values: ['Megamart Manhatten', 'Megamart Brooklyn', 'Megamart Austin', 'Megamart San Jose','Megamart Toronto']
